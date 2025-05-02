@@ -42,8 +42,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // প্রয়োজন হলে userPrompt যাচাই বা স্যানিটাইজ করুন (সংক্ষিপ্ততার জন্য বাদ দেওয়া হয়েছে)
 
     // ডিফল্ট প্রম্পট
-    $defaultPrompt = "একটি সাধারণ জ্ঞানের যেকোনো বিষয়ে (যেমন কঠিন, মজার ইত্যাদি) ভিন্নধর্মী একটি মাল্টিপল চয়েস প্রশ্ন তৈরি করুন। বাংলাদেশী স্টাইলে লিখুন";
-
+    $defaultPrompt = "Generate 1 multiple choice question on a random general knowledge topic hard, funny, etc different types in bangla , Bangladeshi style.";
+    
     // যদি ব্যবহারকারী প্রম্পট সরবরাহ করে, তবে সেটি ব্যবহার করুন, না হলে ডিফল্ট প্রম্পট ব্যবহার করুন
     $finalPrompt = !empty($userPrompt) ? "বিষয়টি নিয়ে একটি ইউনিক ও ভিন্নধর্মী মাল্টিপল চয়েস প্রশ্ন তৈরি করুন: " . $userPrompt : 
     $defaultPrompt;
